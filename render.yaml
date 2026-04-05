@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: fake-job-detection-api
+    env: python
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && uvicorn app:app --host 0.0.0.0 --port 10000"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      # You can add Kaggle credentials here if you download data on start,
+      # but ideally you should check the model into git or use a pre-trained one
+      # so Render doesn't have to train it every restart.
