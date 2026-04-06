@@ -7,3 +7,4 @@ kaggle
 pytest
 requests
 python-dotenv
+gunicorn
