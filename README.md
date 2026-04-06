@@ -41,8 +41,7 @@ A full-stack machine learning application designed to identify fraudulent job po
    ```bash
    uvicorn app:app --reload --port 8000
    ```
-   *Interactive API Documentation available at http://localhost:8000/docs*
-
+  
 ### 2. Frontend Setup (React Application)
 
 1. Open a new terminal and navigate to the frontend directory:
@@ -62,6 +61,6 @@ A full-stack machine learning application designed to identify fraudulent job po
 ## 📦 Deployment
 - **Backend**: Can be deployed directly to [Render](https://render.com/) by connecting this repository (uses the included `render.yaml`).
 - **Frontend**: Can be deployed to [Vercel](https://vercel.com/) with zero configuration. Ensure you add `VITE_API_URL` to your Vercel Environment Variables pointing to your live backend URL.
-
+You can see project demo on https://ssdmpr-oj-ect.vercel.app/
 ## 🛡️ License
 This project is open-source. For demonstration and educational purposes.
